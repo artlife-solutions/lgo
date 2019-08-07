@@ -1,0 +1,33 @@
+{
+    "name": "@artlife/log",
+    "version": "0.0.1",
+    "description": "A Node.js library for logging and metrics. Very simple logs to the console and a MongoDB database.",
+    "main": "build/index.js",
+    "types": "build/index.d.ts",
+    "scripts": {
+        "clean": "rm -rf build/*",
+        "build": "tsc",
+        "clean-build": "rm -rf build/* && tsc",
+        "build:watch": "tsc --watch",
+        "clean-build:watch": "rm -rf build/* && tsc --watch",
+        "prepublishOnly": "npm run clean && tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/artlife-solutions/log.git"
+    },
+    "keywords": [],
+    "author": "ashley@codecapers.com.au",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/artlife-solutions/log/issues"
+    },
+    "homepage": "https://github.com/artlife-solutions/log#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "@types/node": "10.11.4",
+        "source-map-support": "0.5.9",
+        "ts-node": "7.0.1",
+        "typescript": "3.1.1"
+    }
+}
